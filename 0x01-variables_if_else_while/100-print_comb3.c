@@ -1,10 +1,10 @@
 #include <stdio.h>
 
 /**
- *  *main - two digit
- *   *
- *    *Return: Always 0 (Sucess)
- *     */
+ *main - two digit
+ *
+ *Return: Always 0 (Sucess)
+ */
 int main(void)
 {
 	int i, j;
