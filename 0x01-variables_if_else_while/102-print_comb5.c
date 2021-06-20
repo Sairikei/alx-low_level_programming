@@ -1,10 +1,10 @@
 #include <stdio.h>
 
 /**
- *  * main - print two two digit combinations
- *   *
- *    * Return: Always 0 (Sucess)
- *     */
+ *main - print two two digit combinations
+ *
+ *Return: Always 0 (Sucess)
+ */
 int main(void)
 {
 	int i, j;
