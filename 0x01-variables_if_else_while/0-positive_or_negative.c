@@ -4,16 +4,17 @@
 
 
 /**
- *main - check if the number n negative, positive or zero
+ *main - check if the number n is negative, positive or zero
  *
- *Return: Always (Success)
+ *Return: Always (Sucess)
  */
 int main(void)
 {
 	int n;
-	
+
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
+
 	if (n > 0)
 	{
 		printf("%d is positive\n", n);
