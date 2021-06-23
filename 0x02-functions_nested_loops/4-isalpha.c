@@ -1,6 +1,6 @@
 #include "holberton.h"
 
-/*
+/**
  *_isalpha - checks if its a letter
  *@c: integer to be tested
  *Return: 0 or 1
