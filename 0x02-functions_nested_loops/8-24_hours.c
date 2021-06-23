@@ -1,13 +1,14 @@
 #include "holberton.h"
 /**
- *  * jack_bauer - print time
- *   */
+ *jack_bauer - print time
+ */
 void jack_bauer(void)
 {
 	int hr;
 	int min;
 	int hrr;
 	int minn;
+
 	for (hr = 0; hr <= 23; hr++)
 	{
 		for (min = 0; min <= 59; min++)
