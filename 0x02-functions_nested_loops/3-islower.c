@@ -1,9 +1,9 @@
 #include "holberton.h"
 
 /**
- *main - checks for lowercase
- *
- *Return: 0 if its lower or 1 if not
+ *_islower - return 1 if lower case else 0
+ *@c: integer to be tested
+ *Return: Always 0
  */
 int _islower(int c)
 {
