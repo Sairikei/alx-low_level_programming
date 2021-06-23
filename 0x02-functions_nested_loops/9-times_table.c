@@ -1,16 +1,17 @@
 #include "holberton.h"
 
-/*
- * print_times - print the times 9 table
+/**
+ *times_table - print 9 times table
  */
 void times_table(void)
 {
 	int i, j, pro;
+
 	for (i = 0; i <= 9; i++)
 	{
 		for (j = 0; j <= 9; j++)
 		{
-			pro = i*j;
+			pro = i * j;
 			if (j == 0)
 			{
 				_putchar(48);
