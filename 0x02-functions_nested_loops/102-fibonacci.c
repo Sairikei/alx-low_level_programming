@@ -6,27 +6,27 @@
  */
 int main(void)
 {
-	int i, n;
-	long f1, f2, next;
-	f1 = 1;
-	f2 = 2;
-	n = 50;
-	for (i = 0; i < n; i++)
+	int count = 2;
+	long int i = 1, j = 2;
+	long int k;
+
+	printf("%lu, ", i);
+	while (count <= 50)
 	{
-		if (i == 49)
+		if (count == 50)
 		{
-			_putchar(f1 + 48);
+			printf("%lu\n", j);
 		}
 		else
 		{
-			_putchar(f1 + 48);
-			_putchar(',');
-			_putchar(' ');
-			next = f1 + f2;
-			f1 = f2;
-			f2 = next;
+			printf("%lu, ", j);
 		}
+
+		k = j;
+		j += i;
+		i = k;
+		count++;
 	}
-	_putchar('\n');
+
 	return (0);
 }
