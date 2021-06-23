@@ -2,6 +2,8 @@
 
 /*
  *_isalpha - checks if its an alphabet
+ *@c: integer to be tested
+ *Return: 0 or 1
  */
 int _isalpha(int c)
 {
