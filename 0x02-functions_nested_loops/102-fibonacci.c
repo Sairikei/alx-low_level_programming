@@ -6,26 +6,23 @@
  */
 int main(void)
 {
-	int count = 2;
-	long int i = 1, j = 2;
-	long int k;
+	int i = 50;
+	long t1 = 0, t2 = 1;
+	long int nextTerm = t1 + t2;
 
-	while (count <= 50)
+	while (i > 0)
 	{
-		if (count == 50)
+		printf("%ld", nextTerm);
+		if (i != 1)
 		{
-			printf("%lu\n", j);
+			printf(", ");
 		}
-		else
-		{
-			printf("%lu, ", j);
-		}
-
-		k = j;
-		j += i;
-		i = k;
-		count++;
+		t1 = t2;
+		t2 = nextTerm;
+		nextTerm = t1 + t2;
+		i--;
 	}
+	printf("\n");
 
 	return (0);
 }
