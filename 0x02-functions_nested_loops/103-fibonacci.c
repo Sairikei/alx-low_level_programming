@@ -12,6 +12,7 @@ int main(void)
 	x = 0;
 	y = 1;
 	sum = 0;
+
 	while (z < 4000000)
 	{
 		z = x + y;
@@ -23,5 +24,6 @@ int main(void)
 		}
 	}
 	printf("%lu\n", sum);
-	return (0);  
+
+	return (0);
 }
