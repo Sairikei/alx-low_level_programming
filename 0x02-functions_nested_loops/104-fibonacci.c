@@ -7,44 +7,25 @@
  */
 int main(void)
 {
-	int count;
-	unsigned long x, y, z, a, b, c, carry;
-	x = 0;
-	y = 1;
-	for (count = 1; count <= 90; count++)
+	int i = 98;
+	long t1 = 0, t2 = 1;
+	unsigned long int nextTerm = t1 + t2;
+	
+	while (i > 0)
 	{
-		z = x + y;
-		x = y;
-		y = z;
-		printf("%lu, ", z);
-	}
-	a = x % 1000;
-	x = x / 1000;
-	b = y % 1000;
-	y = y / 1000;
-	while (count <= 98)
+	printf("%lu", nextTerm);
+	if (i != 1)
 	{
-		carry = (a + b) / 1000;
-		c = (a + b)-carry * 1000;
-		z = (x + y)+carry;
-		x = y;
-		y = z;
-		a = b;
-		b = c;
-		if (c >= 1000)
-		{
-			printf("%lu%lu", z, c);
-		}
-		else
-		{
-			printf("%lu0%lu", z, c);
-		}
-		if (count < 98)
-		{
-			printf(", ");
-		}
-		count++;
+		printf(", ");
 	}
-	putchar('\n');
+
+	t1 = t2;
+	t2 = nextTerm;
+	nextTerm = t1 + t2;
+	i--;
+
+	}
+	printf("\n");
+	
 	return (0);
 }
