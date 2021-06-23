@@ -19,7 +19,7 @@ int main(void)
 		else if (i % 5 == 0)
 			total += i;
 
-			i++;
+		i++;
 	}
 	printf("%d\n", total);
 
