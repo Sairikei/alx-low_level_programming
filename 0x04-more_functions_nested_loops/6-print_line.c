@@ -1,18 +1,20 @@
 #include "holberton.h"
 
 /**
- *print_line - print a straight ;ine in the terminal
+ *print_line - print a straight line in the terminal
  *@n: number to be checked
  *Return: straight line
  */
 void print_line(int n)
 {
-	while (n--)
+	int c;
+
+	c = 0;
+	while (c < n)
 	{
-		if (n <= 0)
-			break;
-		else
-			_putchar('_');
+		_putchar('_');
+
+		c++;
 	}
 	_putchar('\n');
 }
