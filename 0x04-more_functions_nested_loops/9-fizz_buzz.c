@@ -5,15 +5,25 @@
  */
 void main(void)
 {
-	for (int i = 1; i <= 100; i++)
+	int i;
+
+	i = 1;
+	while (i <= 100)
 	{
-		if (i % 3 == 0)
-			printf("%s ", "Fizz");
+		if (i % 3 == 0 && i % 5 == 0)
+			printf("FizzBuzz");
+		else if (i % 3 == 0)
+			printf("Fizz");
 		else if (i % 5 == 0)
-			printf("%s ", "Buzz");
-		else if (i % 3 == 0 && i % 5 == 0)
-			printf("%s ", "FizzBuzz");
+			printf("Buzz");
 		else
-			printf("%d ", i);
+			printf("%d", i);
+
+		if (i != 100)
+			printf(" ");
+		i++;
 	}
+	printf("\n");
+
+	return (0);
 }
