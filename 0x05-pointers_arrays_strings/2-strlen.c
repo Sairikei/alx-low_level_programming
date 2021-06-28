@@ -2,7 +2,7 @@
 #include "holberton.h"
 
 /**
- *main - print the length of a string
+ *_strlen - print the length of a string
  *
  *@s: length to be returned
  *Return: count
