@@ -1,11 +1,14 @@
 #include "holberton.h"
 
 /**
- *puts_half - prints half of a string
- *@str: half string to be printed
- *Return: string result
+ *puts_half - prints every other character of a string,
+ *@str: A pointer to an int that will be updated
+ *
+ *Return: void
  */
-void puts_half(char *string)
+
+void puts_half(char *str)
+
 {
 	int i, last;
 
@@ -23,4 +26,5 @@ void puts_half(char *string)
 	} /*End FOR*/
 
 	_putchar ('\n');
+
 }
