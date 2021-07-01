@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- *strcat - concentrate two strings
+ *_strcat - concentrate two strings
  *@dest: char parameter
  *@src: char parameter
  *Return: dest char value
@@ -10,13 +10,17 @@ char *_strcat(char *dest, char *src)
 {
 	int i, j;
 
-	i = 0;
-	for (j = 0; dest[j] != '\0'; j++)
-		;
-	while (src[i] != '\0')
-	{
-		dest[j + i] = src[i];
+	i = j = 0;
+	while (dest[i] != '\0')
 		i++;
+	while (src[j] != '\0')
+		j++;
+
+	{
+		dest[i] = src[j];
+		i++;
+		j++;
 	}
+	dest[i] = '\0';
 	return (dest);
 }
