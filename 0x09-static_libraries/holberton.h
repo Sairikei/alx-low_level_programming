@@ -1,7 +1,6 @@
-#ifndef _HOLBERTON_H_
-#define _HOLBERTON_H_
+#ifndef _HOLBERTON_H
+#define _HOLBERTON_H
 
-int _putchar(char c);
 int _islower(int c);
 int _isalpha(int c);
 int _abs(int n);
