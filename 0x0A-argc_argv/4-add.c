@@ -33,12 +33,14 @@ int main(int argc, char *argv[])
 	for (i = 1; i < argc; i++)
 	{
 		if (checkint(argv[i]))
+		{
 			sum += atoi(argv[i]);
-	}
-	else
-	{
+		}
+		else
+		{
 		printf("%s\n", "Error");
 		return (1);
+		}
 	}
 	printf("%d\n", sum);
 	return (0);
