@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "holberton.h"
+
 /**
  *main - prints program name
  *@argc: takes arguement count
