@@ -1,38 +1,39 @@
 #include "holberton.h"
 #include <stdlib.h>
-#include <stdio.h>
-
 /**
- *strin_nconcat - function that concatenates two strings
- *@s1: String 1
- *@s2: string 2
- *@n: bytes from s2
- *
- *Return: pointer to the array or NULL
+ *string_nconcat - concatenates two strings
+ *@s1: first string
+ *@s2: second string
+ *@n: limit of s2
+ *Return: pointer to new space in memory or null
  */
-char *strin_nconcat(char *s1, char *s2, unsigned int n)
+char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	char *p;
-	unsigned int i, j, k, l;
+	char *strDup;
+	int i;
+	unsigned int j;
 
-	i = 0, l = 0;
-	s1 == NULL ? s1 = "" : s1;
-	s2 == NULL ? s2 = "" : s2;
-	while (*(s1 + i) != '\0')
+	if (s1 == NULL)
+		s1 = "";
+	if (s2 == NULL)
+		s2 = "";
+	i = 0;
+	while (s1[i] != '\0')
 		i++;
-	while (*(s2 + l) != '\0')
-		l++;
-	if (n >= l)
-		n = l;
-
-	p = malloc((i + n + 1) * sizeof(char));
-	if (p == NULL)
+	strDup = malloc(sizeof(char) * (i + n + 1));
+	if (strDup == NULL)
 		return (NULL);
-	for (j = 0, k = 0; j < (i + n); j++)
+	i = j = 0;
+	while (s1[i] != '\0')
 	{
-		if (j < i)
-			p[j] = s2[k++];
+		strDup[i] = s1[i];
+		i++;
 	}
-	p[j] = '\0';
-	return (p);
+	while (j < n && s2[j] != '\0')
+	{
+		strDup[i] = s2[j];
+		i++, j++;
+	}
+	strDup[i] = '\0';
+	return (strDup);
 }
