@@ -15,7 +15,7 @@ void print_binary(unsigned long int n)
 	if (n == 0)
 		_putchar('0');
 
-	while(mask > 0)
+	while (mask > 0)
 	{
 		if ((n & mask) == 0 && flag == 1)
 			_putchar('0');
@@ -25,6 +25,6 @@ void print_binary(unsigned long int n)
 			flag = 1;
 		}
 
-		mask = mask >>1;
+		mask = mask >> 1;
 	}
 }
